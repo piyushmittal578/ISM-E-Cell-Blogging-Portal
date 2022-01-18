@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/* navbar */
+.main_nav{
+    background: white;
+    box-shadow: 0 0 8px 0;
+}
+.navbar-brand{
+    color:#000;
+    font-weight: 600;
+}
+.nav-link{
+    color:#000;
+    font-weight: 600;
+}
+.navbar-toggler{
+    background: linear-gradient(to bottom,#fff,#000,#fff);
+}
+.container{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+}
+.card{
+    margin: 1rem;
+    background-color: rgb(235, 235, 226);
+    font-weight: 400;
+}
+.card:hover{
+
+}
+.title{
+    color:rgb(233, 13, 13);
+    font-weight: 600;
+}
+.card-subtitle{
+    color:brown;
+}
