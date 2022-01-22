@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="cards.css">
     <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <title>Document</title>
 </head>
 
@@ -18,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <div class="icon">
-              <img src="https://webserver-ecell.s3.ap-south-1.amazonaws.com/img/logo3.png" alt="e-cell"> 
+                <img src="https://webserver-ecell.s3.ap-south-1.amazonaws.com/img/logo3.png" alt="e-cell">
             </div> <a class="navbar-brand" href="#">E-Cell Blogs</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,37 +53,95 @@
         </div>
     </nav>
     <!-- Navigation Ends -->
+
+    <!-- popups -->
+
     <!-- Cards -->
-    <div class="cards">
-        <div class="img">
-        </div>
-        <div class="text">
-            <div class="heading">
-                Face-GAN
+    <div class="section">
+        <div class="cards">
+            <div class="img">
+                <img src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage" alt="">
             </div>
-            <div class="para">
-                Generating Human Faces in an unsupervised way with the help of WGAN using pytorch lightning
-                framework.A campus portal that provides a Market Hub with some unique features of ‘unrestricted
-                bidding’ and ‘product verification’. It allows the students to upload and sell their old products,
-                on which other students can place bids within a range allowed by the seller.
-            </div>
-            <div class="button">
-                Read More....
-                <div class="popup-wrapper">
-                    <div class="popup">
-                        <div class="popup-close">x</div>
-                        <div class="popup-content">
-                            <h2>Piyush OP</h2>
-                            <p>50% off</p>
-                            <a href="#">Visit Myntra</a>
-                        </div>
-                    </div>
+            <div class="text">
+                <div class="heading">
+                    Face-GAN
                 </div>
+                <div class="para">
+                    Generating Human Faces in an unsupervised way with the help of WGAN using pytorch lightning
+                    framework.A campus portal that provides a Market Hub with some unique features of ‘unrestricted
+                    bidding’ and ‘product verification’. It allows the students to upload and sell their old products,
+                    on which other students can place bids within a range allowed by the seller.
+                </div>
+                <button class="show-modal button" onclick="popup(this.nextElementSibling)">
+                    Read More....
+
+                </button>
+                <div class="modall hidden">
+                    <button class="close-modal">&times;</button>
+                    <h1>I'm a modal window 🔥</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="overlay hidden"></div>
             </div>
         </div>
+        <div class="cards">
+           
+            <div class="text">
+                <div class="heading">
+                    Face-GAN
+                </div>
+                <div class="para">
+                    Generating Human Faces in an unsupervised way with the help of WGAN using pytorch lightning
+                    framework.A campus portal that provides a Market Hub with some unique features of ‘unrestricted
+                    bidding’ and ‘product verification’. It allows the students to upload and sell their old products,
+                    on which other students can place bids within a range allowed by the seller.
+                </div>
+                <button class="show-modal button"  onclick="popup(this.nextElementSibling)">
+                    Read More....
 
-
+                </button>
+                <div class="modall hidden">
+                    <button class="close-modal">&times;</button>
+                    <h1>I'm a modal window 🔥</h1>
+                    <p>L ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="overlay hidden"></div>
+            </div>
+            <div class="img">
+                <img src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage" alt="">
+            </div>
+        </div>
     </div>
+
+    <!-- footer-->
+    <footer class="footer">
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=cyberlabs@iitism.ac.in&su&cc&bcc&body&tf=cm"
+                target="popup"
+                onclick='window.open("https://mail.google.com/mail/u/0/?fs=1&to=cyberlabs@iitism.ac.in&su&cc&bcc&body&tf=cm","popup","width=600,height=600"); return false;'>
+                <i class="fa fa-envelope"></i>
+            </a>
+            <p class="company-name">
+                E-cell &copy; 2021, ALL Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script src="filter.js"></script>
     <script src="popup.js"></script>
 </body>
 

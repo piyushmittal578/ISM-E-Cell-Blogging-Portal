@@ -1,3 +1,7 @@
+.section{
+    margin:2rem;
+}
+  
 .cards{
     display:flex;
     width:75vw;
@@ -5,30 +9,54 @@
     background-color: rgb(0,0,0,0.05);
     margin:auto;
     margin-top:2rem;
-    border-radius:10px 50px 50px 10px;
+    margin-bottom: 2rem;
+    border-radius:10px 30px 30px 10px;
     padding:auto;
     padding-top:0.7%;
-
     box-shadow: 0px 0px 4px 4px grey;  
 }
 .cards:hover{
     /* box-shadow: 0px 0px 10px 8px grey; */
     box-shadow: 0px 0px 8px 10px grey;
 }
-.cards .img{flex:25;}
+.cards:nth-child(2) .img{
+   border-radius: 0px 30px 30px 0px;
+   overflow:hidden;
+}
+.cards:nth-child(1) .img{
+    border-radius: 10px 0px 0px 10px;
+    overflow:hidden;
+ }
+.cards .img{
+    box-shadow: 0px 0px 2px 4px grey inset;;
+    box-sizing: content-box;
+    flex:25;
+    margin:1rem;
+    padding:1rem;
+
+}
+.img img{
+   width:90%;
+   max-height: 100%;
+
+}
 .cards .text{
     flex:75;
+    padding-left:1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.6rem;
     /* color:white; */
     
 }
 .cards .text .heading{
     font-size:2rem;
     font-weight: bold;
-    margin-bottom: 0.5rem; 
+    margin-bottom: 1rem; 
 }
 
 .cards .text .para{
     appearance: none;
+    font-style: normal;
     /* font-family: ; */
     font-size: 1em;;
     font-weight: 0px;

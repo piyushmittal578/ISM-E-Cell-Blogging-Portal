@@ -1,18 +1,55 @@
+"use strict";
 
-const btn = document.querySelector(".button");
-const popup = document.querySelector(".popup-wrapper");
-const closee = document.querySelector(".popup-close");
+const modal = document.querySelector(".modall");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
 
-btn.addEventListener("click", () => {
-  popup.style.display = "block";
-});
+// const openModal = function () {
+//     modal.classList.remove("hidden");
+//     overlay.classList.remove("hidden");
+// };
 
-closee.addEventListener("click", () => {
-  popup.style.display = "none";
-})
+// const closeModal = function () {
+//     modal.classList.add("hidden");
+//     overlay.classList.add("hidden");
+// };
 
-popup.addEventListener('click', e => {
-  if (e.target.className == "popup-wrapper") {
-    popup.style.display = "none";
+// for (let i = 0; i < btnsOpenModal.length; i++)
+//     btnsOpenModal[i].addEventListener("click", openModal);
+
+// btnCloseModal.addEventListener("click", closeModal);
+// overlay.addEventListener("click", closeModal);
+
+// document.addEventListener("keydown", function (e) {
+//     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+//         closeModal();
+//     }
+// });
+// ---------------------
+
+const closeModal = function (elem) {
+  elem.classList.add("hidden");
+  elem.nextElementSibling.classList.add("hidden");
+};
+
+const openModal = function (elem) {
+ elem.classList.remove("hidden");
+  elem.nextElementSibling.classList.remove("hidden");
+};
+
+
+function popup(elem){
+  openModal(elem);
+  console.log(elem.childNodes[1]);
+  function close_fun(){
+    closeModal(elem);
   }
-})
+    elem.childNodes[1].addEventListener("click", close_fun);
+  elem.nextElementSibling.addEventListener("click", close_fun);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closeModal(elem);
+    }
+});
+}
