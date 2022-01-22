@@ -34,22 +34,38 @@ const closeModal = function (elem) {
 };
 
 const openModal = function (elem) {
- elem.classList.remove("hidden");
+  elem.classList.remove("hidden");
   elem.nextElementSibling.classList.remove("hidden");
 };
 
 
-function popup(elem){
+function popup(elem) {
   openModal(elem);
   console.log(elem.childNodes[1]);
-  function close_fun(){
+  function close_fun() {
     closeModal(elem);
   }
-    elem.childNodes[1].addEventListener("click", close_fun);
+  elem.childNodes[1].addEventListener("click", close_fun);
   elem.nextElementSibling.addEventListener("click", close_fun);
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
-        closeModal(elem);
+      closeModal(elem);
     }
-});
+  });
 }
+
+//SearchBar
+
+const search = document.querySelector("input.search");
+
+search.addEventListener("keyup", (e) => {
+  const keyword = e.target.value.trim();
+  const items = document.querySelectorAll("div.cards");
+  items.forEach((item) => {
+    if (item.querySelector(".heading").innerText.toLowerCase().includes(keyword)) {
+      item.style.display = "flex";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});

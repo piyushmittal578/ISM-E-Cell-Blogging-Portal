@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://webserver-ecell.s3.ap-south-1.amazonaws.com/img/logo3.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="cards.css">
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="popup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>E-Cell Blogs</title>
+  </head>
 
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="icon">
-                <img src="https://webserver-ecell.s3.ap-south-1.amazonaws.com/img/logo3.png" alt="e-cell">
-            </div> <a class="navbar-brand" href="#">E-Cell Blogs</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" target="blank" aria-current="page"
-                            href="http://ecelliitism.org/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">
-                        Search
-                    </button>
-                </form>
-            </div>
+      <div class="container-fluid">
+        <div class="icon" style="cursor: auto;">
+          <img
+            src="https://webserver-ecell.s3.ap-south-1.amazonaws.com/img/logo3.png"
+            alt="e-cell"
+          />
         </div>
+        <a class="navbar-brand" href="#">E-Cell Blogs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                target="blank"
+                aria-current="page"
+                href="http://ecelliitism.org/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#footer">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex search">
+            <input
+              class="form-control me-2 search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
     </nav>
     <!-- Navigation Ends -->
 
@@ -58,91 +85,161 @@
 
     <!-- Cards -->
     <div class="section">
-        <div class="cards">
-            <div class="img">
-                <img src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage" alt="">
-            </div>
-            <div class="text">
-                <div class="heading">
-                    Face-GAN
-                </div>
-                <div class="para">
-                    Generating Human Faces in an unsupervised way with the help of WGAN using pytorch lightning
-                    framework.A campus portal that provides a Market Hub with some unique features of ‘unrestricted
-                    bidding’ and ‘product verification’. It allows the students to upload and sell their old products,
-                    on which other students can place bids within a range allowed by the seller.
-                </div>
-                <button class="show-modal button" onclick="popup(this.nextElementSibling)">
-                    Read More....
-
-                </button>
-                <div class="modall hidden">
-                    <button class="close-modal">&times;</button>
-                    <h1>I'm a modal window 🔥</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="overlay hidden"></div>
-            </div>
+      <div class="cards">
+        <div class="img">
+          <img
+            src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage"
+            alt=""
+          />
         </div>
-        <div class="cards">
-           
-            <div class="text">
-                <div class="heading">
-                    Face-GAN
-                </div>
-                <div class="para">
-                    Generating Human Faces in an unsupervised way with the help of WGAN using pytorch lightning
-                    framework.A campus portal that provides a Market Hub with some unique features of ‘unrestricted
-                    bidding’ and ‘product verification’. It allows the students to upload and sell their old products,
-                    on which other students can place bids within a range allowed by the seller.
-                </div>
-                <button class="show-modal button"  onclick="popup(this.nextElementSibling)">
-                    Read More....
-
-                </button>
-                <div class="modall hidden">
-                    <button class="close-modal">&times;</button>
-                    <h1>I'm a modal window 🔥</h1>
-                    <p>L ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="overlay hidden"></div>
-            </div>
-            <div class="img">
-                <img src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage" alt="">
-            </div>
+        <div class="text">
+          <div class="heading">Face-GAN</div>
+          <div class="para">
+            Generating Human Faces in an unsupervised way with the help of WGAN
+            using pytorch lightning framework.A campus portal that provides a
+            Market Hub with some unique features of ‘unrestricted bidding’ and
+            ‘product verification’. It allows the students to upload and sell
+            their old products, on which other students can place bids within a
+            range allowed by the seller.
+          </div>
+          <button
+            class="show-modal button"
+            onclick="popup(this.nextElementSibling)"
+          >
+            Read More....
+          </button>
+          <div class="modall hidden">
+            <button class="close-modal">&times;</button>
+            <h1>I'm a modal window 🔥</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
         </div>
+      </div>
+      <div class="cards">
+        <div class="text">
+          <div class="heading">Bitcoin</div>
+          <div class="para">
+            Generating Human Faces in an unsupervised way with the help of WGAN
+            using pytorch lightning framework.A campus portal that provides a
+            Market Hub with some unique features of ‘unrestricted bidding’ and
+            ‘product verification’. It allows the students to upload and sell
+            their old products, on which other students can place bids within a
+            range allowed by the seller.
+          </div>
+          <button
+            class="show-modal button"
+            onclick="popup(this.nextElementSibling)"
+          >
+            Read More....
+          </button>
+          <div class="modall hidden">
+            <button class="close-modal">&times;</button>
+            <h1>I'm a modal window 🔥</h1>
+            <p>
+              L ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
+        </div>
+        <div class="img">
+          <img
+            src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!--Card 3-->
+      <div class="cards">
+        <div class="img">
+          <img
+            src="https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <div class="heading">Face-GAN</div>
+          <div class="para">
+            Generating Human Faces in an unsupervised way with the help of WGAN
+            using pytorch lightning framework.A campus portal that provides a
+            Market Hub with some unique features of ‘unrestricted bidding’ and
+            ‘product verification’. It allows the students to upload and sell
+            their old products, on which other students can place bids within a
+            range allowed by the seller.
+          </div>
+          <button
+            class="show-modal button"
+            onclick="popup(this.nextElementSibling)"
+          >
+            Read More....
+          </button>
+          <div class="modall hidden">
+            <button class="close-modal">&times;</button>
+            <h1>I'm a modal window 🔥</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
+        </div>
+      </div>
     </div>
 
     <!-- footer-->
-    <footer class="footer">
-        <div class="icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://mail.google.com/mail/u/0/?fs=1&to=cyberlabs@iitism.ac.in&su&cc&bcc&body&tf=cm"
-                target="popup"
-                onclick='window.open("https://mail.google.com/mail/u/0/?fs=1&to=cyberlabs@iitism.ac.in&su&cc&bcc&body&tf=cm","popup","width=600,height=600"); return false;'>
-                <i class="fa fa-envelope"></i>
-            </a>
-            <p class="company-name">
-                E-cell &copy; 2021, ALL Rights Reserved
-            </p>
-        </div>
+    <footer class="footer" id="footer">
+      <div class="icons">
+        <a target="blank" href="https://www.facebook.com/ecelliitism/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="blank"
+          href="https://www.linkedin.com/company/entrepreneurship-cell-iit-ism-dhanbad/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="blank" href="https://www.instagram.com/ecell_iitism/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- <a target="blank" href="#"><i class="fab fa-twitter"></i></a> -->
+        <a
+          target="blank"
+          href="https://mail.google.com/mail/u/0/?fs=1&to=ecell@iitism.ac.in&su&cc&bcc&body&tf=cm"
+          target="popup"
+          onclick='window.open("https://mail.google.com/mail/u/0/?fs=1&to=ecell@iitism.ac.in&su&cc&bcc&body&tf=cm","popup","width=600,height=600"); return false;'
+        >
+          <i class="fa fa-envelope"></i>
+        </a>
+        <p class="company-name">E-Cell &copy; 2021, ALL Rights Reserved</p>
+      </div>
     </footer>
     <script src="filter.js"></script>
     <script src="popup.js"></script>
-</body>
 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

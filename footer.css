@@ -4,6 +4,13 @@
     background: rgb(0,0,0,0.05);
     text-align: center;
     color: Black;
+    clear: both;
+    position: relative;
+   
+}
+
+.footer p{
+    font-size: small;
 }
 
 .icons{
